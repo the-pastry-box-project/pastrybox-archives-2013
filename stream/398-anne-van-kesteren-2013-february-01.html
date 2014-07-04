@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8">
+    <title>The Pastry Box Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@alexduloz">
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    		-webkit-box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+  			box-sizing: border-box;
+    		}
+    		
+		body {
+			width: 100%;
+			max-width: 800px;
+			padding: 40px 20px 0 20px;
+			margin: 0 auto;
+			padding-top: 40px;
+			font-size: 24px;
+			line-height: 1.4;
+			color: #333;
+			font-family: "Georgia", serif;
+			overflow-y: scroll;
+			}
+		
+		p, ul, ol, blockquote, figure, pre, iframe {
+			margin-bottom: 30px;
+			}
+		
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			font-family: "Helvetica", sans-serif;
+			margin-bottom: 0;
+			}
+		
+		a {
+			color: #333;
+			text-decoration: none;
+			border-bottom: 2px solid #333;
+			}
+		
+		ul {
+			list-style-type: disc;
+			}
+		
+		ul, ol {
+			padding-left: 25px;
+			}
+			
+		li {
+		 	margin-bottom: 5px;
+		 	}
+		 
+		.thought-content {
+			margin-bottom: 60px;
+			border-bottom: 1px solid #aaa;
+		 	}
+		 
+		.project {
+		 	font-size: 30px;
+		 	margin: 40px 0 60px 0;
+		 	}
+		 	
+		blockquote {
+		 	width: 75%;
+		 	margin-left: auto;
+		 	margin-right: auto;
+		 	color: #777;
+		 	border-left: double 4px #ccc;
+		 	font-style: italic;
+		 	padding-left: 20px;
+		 	font-size: .9em;
+		 	}
+		 
+		figcaption {
+		 	text-align: right;
+		 	}
+		 
+		code {
+		 	border: 1px solid #ccc;
+		 	border-radius: 3px;
+		 	background: #fafafa;
+		 	font-family: monospace;
+		 	font-size: .9em;
+		 	}
+		 
+		pre {
+		 	background: #555;
+		 	color: white;
+		 	border-radius: 5px;
+		 	padding: 10px;
+		 	}
+		 	
+		pre code {
+		 	border: 0;
+		 	background: #555;
+		 	font-size: .8em;
+		 	white-space: pre-wrap;
+		 	}
+
+		.footnote {
+			font-size: .8em;
+			position: relative;
+			color: #777;
+			padding-top: .4em;
+			}
+
+		.footnote:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 1px;
+			background: #777;
+			width: 20%;
+			}
+
+		hr {
+		 	margin-bottom: 40px;
+		 	}
+		 
+		.baked-by {
+		 	font-weight: bold;
+		 	}
+		 	
+    </style>
+  </head>
+  <body>
+    
+    <p class="project">The Pastry Box Project</p>
+
+    
+    <h1>Friday, 1 February 2013</h1>
+    
+    <p class="baked-by">baked by Anne van Kesteren</p>
+    
+    <div class="thought-content">
+       <p>Having written about my departure from the W3C last month, it seems only fitting to write about my return now. I was elected to its Technical Architecture Group, as part of a <a href="http://infrequently.org/2012/12/reforming-the-w3c-tag/" title="Reforming the W3C TAG">reform campaign</a> driven by Alex Russell. Alex has great ideas on improving modern day web development and I share his passion for figuring out how the web is layered and how we can expose those layers for the world to do something wonderful with them.</p><p>In the beginning I had some misgivings about Alex, in particular the Web IDL bashing<sup><a href="#fn1" id="r1">[1]</a></sup>. I understand now that his concerns are with developers coming from a C/C++ background designing horrific JavaScript APIs. And that DOM for someone from TC39 (designers of JavaScript) means Web-IDL-designed API, rather than <a href="http://dom.spec.whatwg.org/">DOM</a>.</p><p>I was also pessimistic about this TAG adventure, and since five reform candidates were running for four slots I was hoping I would not make the cut. But now I look forward to it. Taking a more high-level perspective with a different set of people than I usually hang out with will be a great learning experience. And ideally that leads to better standards writing down the road.</p><p id="fn1" class="footnote"><a href="#r1">[1]</a>To me Web IDL was the first real attempt to make it easier to define JavaScript-friendly APIs with some enforced consistency with respect to argument handling. Its predecessor, aptly named OMG IDL, was terrible in that respect.</p>
+    </div>
+  
+  </body>
+</html>

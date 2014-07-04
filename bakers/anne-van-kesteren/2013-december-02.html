@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8">
+    <title>The Pastry Box Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@alexduloz">
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    		-webkit-box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+  			box-sizing: border-box;
+    		}
+    		
+		body {
+			width: 100%;
+			max-width: 800px;
+			padding: 40px 20px 0 20px;
+			margin: 0 auto;
+			padding-top: 40px;
+			font-size: 24px;
+			line-height: 1.4;
+			color: #333;
+			font-family: "Georgia", serif;
+			overflow-y: scroll;
+			}
+		
+		p, ul, ol, blockquote, figure, pre, iframe {
+			margin-bottom: 30px;
+			}
+		
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			font-family: "Helvetica", sans-serif;
+			margin-bottom: 0;
+			}
+		
+		a {
+			color: #333;
+			text-decoration: none;
+			border-bottom: 2px solid #333;
+			}
+		
+		ul {
+			list-style-type: disc;
+			}
+		
+		ul, ol {
+			padding-left: 25px;
+			}
+			
+		li {
+		 	margin-bottom: 5px;
+		 	}
+		 
+		.thought-content {
+			margin-bottom: 60px;
+			border-bottom: 1px solid #aaa;
+		 	}
+		 
+		.project {
+		 	font-size: 30px;
+		 	margin: 40px 0 60px 0;
+		 	}
+		 	
+		blockquote {
+		 	width: 75%;
+		 	margin-left: auto;
+		 	margin-right: auto;
+		 	color: #777;
+		 	border-left: double 4px #ccc;
+		 	font-style: italic;
+		 	padding-left: 20px;
+		 	font-size: .9em;
+		 	}
+		 
+		figcaption {
+		 	text-align: right;
+		 	}
+		 
+		code {
+		 	border: 1px solid #ccc;
+		 	border-radius: 3px;
+		 	background: #fafafa;
+		 	font-family: monospace;
+		 	font-size: .9em;
+		 	}
+		 
+		pre {
+		 	background: #555;
+		 	color: white;
+		 	border-radius: 5px;
+		 	padding: 10px;
+		 	}
+		 	
+		pre code {
+		 	border: 0;
+		 	background: #555;
+		 	font-size: .8em;
+		 	white-space: pre-wrap;
+		 	}
+
+		.footnote {
+			font-size: .8em;
+			position: relative;
+			color: #777;
+			padding-top: .4em;
+			}
+
+		.footnote:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 1px;
+			background: #777;
+			width: 20%;
+			}
+
+		hr {
+		 	margin-bottom: 40px;
+		 	}
+		 
+		.baked-by {
+		 	font-weight: bold;
+		 	}
+		 	
+    </style>
+  </head>
+  <body>
+    
+    <p class="project">The Pastry Box Project</p>
+
+    
+    <h1>Monday, 2 December 2013</h1>
+    
+    <p class="baked-by">baked by Anne van Kesteren</p>
+    
+    <div class="thought-content">
+       <p>We have operating systems, browsers, app markets, and the web. I want to change the world so that the operating system is the browser and its app market the web. I am using this last post to describe this system in a little detail as it is exciting to think about, yet much is still unclear.</p><p>Foremost, everything on the system has a URL. You bookmark <code>https://mail.example.com/</code> to “install” your Example Mail app on your home screen (<code>about:home</code>). Some of these URLs could be built-ins, e.g. <code>about:settings</code> or<code>about:phone</code>, to deal with configuration and legacy applications the web does not really have an interest in supporting natively. After all, with WebRTC we can make <code>https://phone.example.org/</code> happen (and so much more).</p><p>Being able to navigate to these URLs is essential. This allows apps to be integrated with each other in the same way sites are today, using <code>&lt;a href=&quot;&quot;&gt;</code>. On this system apps and sites will be within the same continuum.</p><p>To get there offline will need to work. A flaky network should still give us access to our bookmarked URLs and let us take photos with <code>http://betterphoto.example.com/nightly</code>. We need to get smarter about allocating storage and not prompting the user for it. And since we will be putting the trust with the end-user rather than a centralized app store, we have to get creative about APIs that are today deemed privileged. Can we do a socket API that works for sites? Can we expose Bluetooth? Is exposing a Bluetooth API even sensible on a platform that will likely outlive it?</p><p>That is what I’m working on so one day I can say “Native is dead, long live the native web.”</p>
+    </div>
+  
+  </body>
+</html>

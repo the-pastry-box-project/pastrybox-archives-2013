@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8">
+    <title>The Pastry Box Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@alexduloz">
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    		-webkit-box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+  			box-sizing: border-box;
+    		}
+    		
+		body {
+			width: 100%;
+			max-width: 800px;
+			padding: 40px 20px 0 20px;
+			margin: 0 auto;
+			padding-top: 40px;
+			font-size: 24px;
+			line-height: 1.4;
+			color: #333;
+			font-family: "Georgia", serif;
+			overflow-y: scroll;
+			}
+		
+		p, ul, ol, blockquote, figure, pre, iframe {
+			margin-bottom: 30px;
+			}
+		
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			font-family: "Helvetica", sans-serif;
+			margin-bottom: 0;
+			}
+		
+		a {
+			color: #333;
+			text-decoration: none;
+			border-bottom: 2px solid #333;
+			}
+		
+		ul {
+			list-style-type: disc;
+			}
+		
+		ul, ol {
+			padding-left: 25px;
+			}
+			
+		li {
+		 	margin-bottom: 5px;
+		 	}
+		 
+		.thought-content {
+			margin-bottom: 60px;
+			border-bottom: 1px solid #aaa;
+		 	}
+		 
+		.project {
+		 	font-size: 30px;
+		 	margin: 40px 0 60px 0;
+		 	}
+		 	
+		blockquote {
+		 	width: 75%;
+		 	margin-left: auto;
+		 	margin-right: auto;
+		 	color: #777;
+		 	border-left: double 4px #ccc;
+		 	font-style: italic;
+		 	padding-left: 20px;
+		 	font-size: .9em;
+		 	}
+		 
+		figcaption {
+		 	text-align: right;
+		 	}
+		 
+		code {
+		 	border: 1px solid #ccc;
+		 	border-radius: 3px;
+		 	background: #fafafa;
+		 	font-family: monospace;
+		 	font-size: .9em;
+		 	}
+		 
+		pre {
+		 	background: #555;
+		 	color: white;
+		 	border-radius: 5px;
+		 	padding: 10px;
+		 	}
+		 	
+		pre code {
+		 	border: 0;
+		 	background: #555;
+		 	font-size: .8em;
+		 	white-space: pre-wrap;
+		 	}
+
+		.footnote {
+			font-size: .8em;
+			position: relative;
+			color: #777;
+			padding-top: .4em;
+			}
+
+		.footnote:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 1px;
+			background: #777;
+			width: 20%;
+			}
+
+		hr {
+		 	margin-bottom: 40px;
+		 	}
+		 
+		.baked-by {
+		 	font-weight: bold;
+		 	}
+		 	
+    </style>
+  </head>
+  <body>
+    
+    <p class="project">The Pastry Box Project</p>
+
+    
+    <h1>Tuesday, 7 May 2013</h1>
+    
+    <p class="baked-by">baked by Anne van Kesteren</p>
+    
+    <div class="thought-content">
+       <p>Within the standards world every now and then modularization comes up. “Standards should be modular!” One could imagine Jeff Jaffe (W3C’s CEO) going on stage at one of W3C’s conferences and yelling “modularity! modularity! modularity!” and one would not be too far from the truth. The standards created however are often not modular, but rather bolt-on solutions on top of the existing stack (often bolt-on solutions themselves). So rather than modules that evolve over time, we have an ever increasing set of standards that patch each other, often in non-obvious ways.</p><p>One way this is evident is that the software that uses these standards often uses a different architecture. In software <a href="http://www.w3.org/TR/CSP/">CSP</a> is not a single module, but rather would be part of e.g. HTTP (header processing), fetching (protocol for retrieving bits out of URL used by HTML’s <code>img</code> element and every other piece of content that can be used to initiate a request), and some mediation part that enforces the policy. In part it makes sense to design new features separately initially. This helps implementors to grasp the work that needs be done and developers how they can make use of this new feature. But long-term it harms the understanding of the platform. Say we introduce a new feature that performs a fetching operation. What will its effect be on CSP? What will its effect be on other specifications bolted on top of fetching? You do not just need to use the fetching protocol in the right way, you also need to patch CSP and potentially other places. In other words, the modularity has left the building.</p><p>The standards process needs to become more flexible so the documents that describe the web platform can evolve over time and change shape to meet new demands and constraints. The WHATWG has been pioneering this model for close to a decade now and given the superior class of documents that have been developed it seems about time to take note.</p>
+    </div>
+  
+  </body>
+</html>
