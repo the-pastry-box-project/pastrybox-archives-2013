@@ -4,7 +4,7 @@ All the thoughts published on [The Pastry Box Project](http://the-pastry-box-pro
 
 This approach is part of our [content preservation philosophy](http://the-pastry-box-project.net/philosophy).
 
-This repository collects the thoughts published in 2013 (starting at #367).
+This repository collects the thoughts published in 2013.
 
 You'll notice that the template used for the thoughts stored on GitHub is not an exact replica of the template used on the website. Javascript has been removed and CSS has been simplified.
 
